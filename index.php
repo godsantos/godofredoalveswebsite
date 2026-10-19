@@ -72,7 +72,7 @@ $resume = 'Godofredo_Alves-Resume-fullstack.pdf';
   <main id="top">
     <section class="hero shell">
       <div class="hero-copy">
-        <p class="eyebrow reveal"><span class="pulse"></span> Toronto · Open to the right opportunity</p>
+        <p class="eyebrow reveal"><span class="pulse"></span> Toronto, Canada</p>
         <h1 aria-label="I make complex systems work.">
           <span class="line"><span>I make complex</span></span>
           <span class="line"><span class="typer" aria-hidden="true" data-words="banking,AI,cloud,legacy,telecom"><span class="typed">banking</span><span class="caret"></span></span></span>
