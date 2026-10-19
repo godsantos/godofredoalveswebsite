@@ -47,13 +47,16 @@ h1 em{color:var(--teal);font-style:normal}
 .button-dark{background:var(--ink);color:var(--white)}.button-light{background:var(--acid);color:var(--ink)}
 .text-link{font-weight:600;text-decoration:none;font-size:.9rem;background:linear-gradient(currentColor,currentColor) 0 100%/100% 1px no-repeat;padding-bottom:3px;transition:background-size .3s var(--ease)}
 .text-link:hover{background-size:0 1px;background-position:100% 100%}
-.hero-portrait{position:relative;justify-self:end;width:min(100%,420px)}
-.portrait-frame{aspect-ratio:4/5;overflow:hidden;background:#d9d6ce;border-radius:48% 48% 12px 12px}
-.portrait-frame img{width:100%;height:115%;object-fit:cover;object-position:center top;will-change:transform}
-.portrait-note{position:absolute;right:-24px;bottom:36px;background:var(--acid);width:144px;height:144px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;box-shadow:0 14px 40px rgba(21,24,22,.14);animation:float 6s ease-in-out infinite}
-@keyframes float{0%,100%{transform:rotate(6deg) translateY(0)}50%{transform:rotate(-2deg) translateY(-10px)}}
-.portrait-note strong{font:800 2rem var(--display);line-height:1}
-.portrait-note>span{font-size:.74rem;text-align:center;line-height:1.3;margin-top:8px;font-weight:600}
+.hero-portrait{position:relative;justify-self:end;width:min(100%,420px);aspect-ratio:1122/1402}
+.portrait-card{position:absolute;inset:14% 0 0;border-radius:28px;overflow:hidden;background:radial-gradient(120% 90% at 50% 0%,#12927f 0%,var(--teal) 45%,#074d45 100%);box-shadow:0 30px 60px -20px rgba(7,77,69,.45)}
+.portrait-card::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.09) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.09) 1px,transparent 1px);background-size:28px 28px;mask-image:linear-gradient(to bottom,#000 10%,transparent 85%);-webkit-mask-image:linear-gradient(to bottom,#000 10%,transparent 85%)}
+.portrait-glow{position:absolute;width:70%;aspect-ratio:1;left:15%;top:-8%;border-radius:50%;background:radial-gradient(circle,rgba(201,255,74,.55),rgba(201,255,74,0) 65%);filter:blur(10px);animation:glow 7s ease-in-out infinite alternate}
+@keyframes glow{to{transform:translate(6%,8%) scale(1.08)}}
+.portrait-cutout{position:relative;width:100%;height:100%;object-fit:contain;object-position:bottom;clip-path:inset(-10% 0 0 0 round 0 0 28px 28px);filter:drop-shadow(0 18px 30px rgba(0,0,0,.25));will-change:transform}
+.portrait-note{position:absolute;left:-26px;bottom:34px;background:var(--ink);color:var(--white);padding:16px 20px;border-radius:16px;display:flex;align-items:center;gap:12px;box-shadow:0 16px 36px rgba(21,24,22,.28);animation:float 6s ease-in-out infinite}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.portrait-note strong{font:800 2rem var(--display);line-height:1;color:var(--acid)}
+.portrait-note>span{font-size:.78rem;line-height:1.25;font-weight:600;max-width:90px}
 
 /* marquee */
 .marquee{background:var(--ink);color:var(--white);overflow:hidden;padding:26px 0;--speed:38s}
@@ -193,7 +196,7 @@ details li{margin:10px 0}
 @media(max-width:900px){
   .site-header nav{display:none}
   .hero{grid-template-columns:1fr;gap:50px;min-height:auto;padding-top:30px}
-  .hero-portrait{justify-self:center;width:min(78%,400px)}
+  .hero-portrait{justify-self:center;width:min(86%,400px)}
   .proof{grid-template-columns:repeat(2,1fr)}.proof div:nth-child(2){border-right:0}.proof div:nth-child(-n+2){border-bottom:1px solid var(--line)}
   .work-intro,.work,.career-layout{grid-template-columns:1fr}.work-intro{margin-bottom:36px}.project-visual{height:250px}
   .sticky{position:static}
@@ -203,7 +206,7 @@ details li{margin:10px 0}
   .shell,.contact-inner{width:calc(100% - 32px)}
   .site-header{height:68px;padding-inline:16px}.site-header.scrolled{height:58px}
   .hero-actions{flex-direction:column;align-items:flex-start}
-  .portrait-note{width:108px;height:108px;right:-8px}.portrait-note strong{font-size:1.6rem}
+  .portrait-note{left:-6px;bottom:20px;padding:12px 14px}.portrait-note strong{font-size:1.6rem}
   .proof div{padding:28px 14px}
   .section{padding-block:80px}
   .work-panels{min-height:420px}.work-panel{padding:30px 24px}.project-visual{height:210px}

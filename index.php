@@ -6,7 +6,7 @@ $skills = $data['skills_matrix'];
 $skillCompanies = $data['skill_companies'];
 $technicalSkills = $data['technical_skills'];
 function e($value) { return htmlspecialchars($value, ENT_QUOTES, 'UTF-8'); }
-$assetVersion = '20261019-3';
+$assetVersion = '20261019-4';
 
 $projects = [
   [
@@ -85,8 +85,9 @@ $resume = 'Godofredo_Alves-Resume-fullstack.pdf';
         <div class="hero-actions reveal"><a class="button button-dark" href="#work">See selected work <span>↓</span></a><a class="text-link" href="<?= e($resume) ?>" target="_blank" rel="noopener">View résumé ↗</a></div>
       </div>
       <div class="hero-portrait reveal">
-        <div class="portrait-frame"><img src="assets/images/godofredo-portrait-2026.png?v=<?= e($assetVersion) ?>" alt="Godofredo Alves" width="1024" height="1536" fetchpriority="high"></div>
-        <div class="portrait-note"><strong><span data-count="20">20</span>+</strong><span>years shipping<br>software</span></div>
+        <div class="portrait-card" aria-hidden="true"><span class="portrait-glow"></span></div>
+        <img class="portrait-cutout" src="assets/images/godofredo-cutout.webp?v=<?= e($assetVersion) ?>" alt="Godofredo Alves" width="1122" height="1402" fetchpriority="high">
+        <div class="portrait-note"><strong><span data-count="20">20</span>+</strong><span>years shipping software</span></div>
       </div>
     </section>
 

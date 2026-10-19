@@ -60,10 +60,9 @@ document.addEventListener('DOMContentLoaded', () => {
     })();
   }
 
-  // Header state, progress bar, parallax portrait, timeline fill, active nav
+  // Header state, progress bar, timeline fill, active nav
   const header = document.querySelector('.site-header');
   const progress = document.querySelector('.progress');
-  const portrait = document.querySelector('.portrait-frame img');
   const timeline = document.querySelector('.timeline');
   const roles = [...document.querySelectorAll('.role')];
   const navLinks = [...document.querySelectorAll('nav a')];
@@ -74,7 +73,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const max = document.documentElement.scrollHeight - innerHeight;
     header.classList.toggle('scrolled', y > 20);
     progress.style.transform = `scaleX(${max > 0 ? y / max : 0})`;
-    if (portrait && !reduced) portrait.style.transform = `translateY(${Math.min(y, 800) * -0.08}px)`;
     if (timeline) {
       const r = timeline.getBoundingClientRect();
       const marker = innerHeight * 0.6;
