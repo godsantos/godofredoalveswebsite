@@ -6,7 +6,19 @@ $skills = $data['skills_matrix'];
 $skillCompanies = $data['skill_companies'];
 $technicalSkills = $data['technical_skills'];
 function e($value) { return htmlspecialchars($value, ENT_QUOTES, 'UTF-8'); }
-$assetVersion = '20261019-4';
+function highlight($text) {
+  $clients = [
+    'Santander' => ['santander', 'https://www.santander.com'],
+    'Mapfre' => ['mapfre', 'https://www.mapfre.com'],
+    'Telefónica' => ['telefonica', 'https://www.telefonica.com'],
+  ];
+  if (preg_match('/^([^:]{2,60}):\s*(.*)$/su', $text, $m) && isset($clients[strtok($m[1], ' ')])) {
+    [$logo, $url] = $clients[strtok($m[1], ' ')];
+    return '<span class="client-line"><a class="client-name" href="' . e($url) . '" target="_blank" rel="noopener"><img src="assets/img/logos/' . $logo . '.png" alt="" width="20" height="20">' . e($m[1]) . ' ↗</a>' . e($m[2]) . '</span>';
+  }
+  return e($text);
+}
+$assetVersion = '20261019-5';
 
 $projects = [
   [
@@ -134,7 +146,7 @@ $resume = 'Godofredo_Alves-Resume-fullstack.pdf';
 
     <section class="section career" id="career">
       <div class="shell career-layout">
-        <div class="section-lead sticky reveal"><p class="kicker">Career</p><h2>Since 2006</h2><p>From enterprise Java in São Paulo to leading AI platform teams in Toronto.</p><a class="text-link" href="<?= e($resume) ?>" target="_blank" rel="noopener">Full résumé ↗</a></div>
+        <div class="section-lead sticky reveal"><p class="kicker">Career</p><h2>Since 2002</h2><p>From enterprise Java in São Paulo to leading AI platform teams in Toronto.</p><a class="text-link" href="<?= e($resume) ?>" target="_blank" rel="noopener">Full résumé ↗</a></div>
         <ol class="timeline">
           <span class="timeline-fill" aria-hidden="true"></span>
           <?php foreach ($experience as $job): ?>
@@ -142,10 +154,11 @@ $resume = 'Godofredo_Alves-Resume-fullstack.pdf';
               <span class="dot" aria-hidden="true"></span>
               <p class="meta"><span><?= e($job['company']) ?></span><span><?= e($job['period']) ?><?= $job['location'] ? ' · ' . e($job['location']) : '' ?></span></p>
               <h3><?= e($job['role']) ?></h3>
-              <p><?= e($job['highlights'][0]) ?></p>
+              <p><?= highlight($job['highlights'][0]) ?></p>
+              <?php if (!empty($job['clients'])): ?><ul class="role-clients" aria-label="Clients"><?php foreach ($job['clients'] as $c): ?><li><?= e($c) ?></li><?php endforeach; ?></ul><?php endif; ?>
               <?php if (!empty($job['tags'])): ?><ul class="role-tags" aria-label="Technologies"><?php foreach ($job['tags'] as $tag): ?><li><?= e($tag) ?></li><?php endforeach; ?></ul><?php endif; ?>
               <?php if (count($job['highlights']) > 1): ?>
-                <details><summary>More <span>+</span></summary><div><ul><?php foreach (array_slice($job['highlights'], 1) as $h): ?><li><?= e($h) ?></li><?php endforeach; ?></ul></div></details>
+                <details><summary>More <span>+</span></summary><div><ul><?php foreach (array_slice($job['highlights'], 1) as $h): ?><li><?= highlight($h) ?></li><?php endforeach; ?></ul></div></details>
               <?php endif; ?>
             </li>
           <?php endforeach; ?>

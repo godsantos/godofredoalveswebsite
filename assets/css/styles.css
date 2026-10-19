@@ -193,6 +193,9 @@ details li{margin:10px 0}
 .skill-grid.filtered li.on{opacity:1;background:var(--teal);color:var(--white);border-color:var(--teal);transform:translateY(-2px)}
 .role-tags{list-style:none;padding:0;margin:14px 0 0;display:flex;flex-wrap:wrap;gap:6px}
 .role-tags li{font-size:.72rem;border:1px solid var(--line);padding:4px 8px;color:var(--muted)}
+.role-clients{list-style:none;padding:0;margin:14px 0 0;display:flex;flex-wrap:wrap;gap:6px}
+.role-clients li{font-size:.72rem;font-weight:600;letter-spacing:.02em;padding:4px 10px;color:var(--teal);background:rgba(11,116,104,.1);border-radius:999px}
+.role-clients+.role-tags{margin-top:8px}
 @media(max-width:900px){
   .site-header nav{display:none}
   .hero{grid-template-columns:1fr;gap:50px;min-height:auto;padding-top:30px}
@@ -224,3 +227,8 @@ details li{margin:10px 0}
   .js .reveal{opacity:1;transform:none}
   .marquee-track{flex-wrap:wrap;width:auto}.marquee-group[aria-hidden]{display:none}
 }
+.client-name{display:flex;align-items:center;gap:8px;width:fit-content;margin-bottom:6px;padding:4px 12px 4px 6px;border-radius:999px;background:rgba(11,116,104,.1);color:var(--teal);font-weight:700;font-size:.85rem;letter-spacing:.01em}
+.client-name img{width:20px;height:20px;border-radius:4px;background:#fff;padding:1px}
+.client-line{display:block}
+details li:has(.client-line){margin-bottom:18px;list-style:none}
+a.client-name{text-decoration:none}a.client-name:hover{background:var(--teal);color:var(--white)}

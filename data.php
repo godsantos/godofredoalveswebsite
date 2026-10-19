@@ -67,13 +67,16 @@ return [
             'period' => 'Oct 2025 – Present',
             'location' => 'Toronto, ON (Hybrid/Remote)',
             'highlights' => [
-                'Hands-on technical leadership across 3 engineering squads (17 engineers: Platform & Backend, AI & Data, Frontend & QA).',
-                'Architected the end-to-end microservices platform: React/TypeScript SPA, Node.js API Gateway, Python FastAPI analytics, and Java 17/Spring Boot credit & risk services.',
-                'Engineered the SEC EDGAR/XBRL data ingestion engine with a 5-provider market data ladder (AlphaVantage, Finnhub, Yahoo), calculating Sharpe, volatility, drawdown, and leverage.',
-                'Designed the flagship "Senior Analyst" AI engine: multi-provider LLM orchestration (Claude, OpenAI, Gemini) with structured JSON schemas, RAG, and strict anti-hallucination guardrails.',
+                'Engineering leader for 3 squads and 17 engineers (Platform & Backend, AI & Data, Frontend & QA), combining hands-on architecture with people leadership.',
+                'Hiring, onboarding, and career growth: run 1:1s, set goals and performance reviews, and mentor senior and junior engineers into tech leads.',
+                'Own the technical roadmap with product and business stakeholders: delivery planning, sprint cadence, budgets, and cloud cost control.',
+                'Set engineering standards across squads: architecture reviews, code review practices, quality gates, and release governance.',
+                'Architected the end-to-end microservices platform: React/TypeScript SPA, Node.js API Gateway, Python FastAPI analytics, and Java 17/Spring Boot credit & risk services, backed by PostgreSQL, MySQL, MongoDB, Redis caching, and AWS SQS message queues.',
+                'Engineered the SEC EDGAR/XBRL data ingestion engine with multiple market data providers, calculating Sharpe, volatility, drawdown, and leverage, plus predictive analysis.',
+                'Designed the AI research engine that turns holdings, filings, and market data into portfolio-specific analysis: multi-provider LLM orchestration with specialized agents, structured JSON schemas, RAG grounding, and strict anti-hallucination guardrails.',
                 'Implemented full CI/CD with GitHub Actions, Docker, ECS Fargate, Testcontainers, Vitest, and Playwright E2E testing.'
             ],
-            'tags' => ['Java 17', 'Spring Boot', 'Python', 'FastAPI', 'React', 'TypeScript', 'AWS ECS', 'PostgreSQL', 'Claude/OpenAI APIs', 'Docker']
+            'tags' => ['Java 17', 'Spring Boot', 'Python', 'FastAPI', 'Node.js', 'React', 'TypeScript', 'PostgreSQL', 'MySQL', 'MongoDB', 'Redis', 'AWS SQS', 'AWS ECS', 'Docker', 'Claude/OpenAI APIs', 'Linux']
         ],
         [
             'company' => 'Synopsys Inc. / Black Duck',
@@ -89,7 +92,7 @@ return [
                 'Recommended improvements to process, code, design, and architecture to raise quality and cut development and maintenance costs.',
                 'Improved Black Duck’s own audit process by building new internal tools and automation, and mentored junior engineers.'
             ],
-            'tags' => ['Software Architecture', 'Code Quality Audits', 'M&A Due Diligence', 'Static Analysis', 'SDLC Governance', 'Risk Analysis', 'Java', 'Spring Boot', 'Spring MVC', 'Python', 'React', 'Angular', 'SQL', 'Oracle', 'Elasticsearch', 'Kibana', 'Jira', 'SonarQube']
+            'tags' => ['Software Architecture', 'Code Quality Audits', 'M&A Due Diligence', 'Static Analysis', 'SDLC Governance', 'Risk Analysis', 'Java', 'Spring Boot', 'Spring MVC', 'Python', 'React', 'Angular', 'SQL', 'Oracle', 'Elasticsearch', 'Kibana', 'Jira', 'SonarQube', 'Linux']
         ],
         [
             'company' => 'Agua Limpa',
@@ -112,16 +115,18 @@ return [
             'period' => '2015 – 2018',
             'location' => 'São Paulo, Brazil',
             'highlights' => [
+                'As a consultant at Everis / NTT DATA, I was placed with Tier-1 clients in banking, insurance, and telecom, leading engineering squads and owning solution architecture for large modernization, integration, and DevOps programs across Europe and Latin America.',
                 'Santander Bank: Led a squad of 5 engineers delivering DevOps automation, containerization, and automated environment provisioning across Europe & Latin America using JavaEE, .NET, Python, AWS, Docker, and Kibana.',
                 'Mapfre Insurance (30M+ Customers): Solutions Architect leading 5 engineers building an automated cognitive operations bot powered by IBM Watson, Spring Boot, Node, and messaging APIs (WhatsApp & Telegram) for autonomous system health recovery.',
                 'Telefónica Telecommunications (100M+ Customers): Solutions Architect leading 7 engineers integrating legacy Amdocs telecom billing systems using Oracle Service Bus (OSB), BPEL, and Java Spring microservices.'
             ],
-            'tags' => ['Santander', 'Mapfre', 'Telefónica', 'Java Spring', 'IBM Watson', 'AWS', 'Docker', 'Oracle Service Bus', 'DevOps']
+            'clients' => ['Santander', 'Mapfre', 'Telefónica'],
+            'tags' => ['JavaEE', 'Java Spring / Spring Boot', 'Struts / JSF', '.NET / C#', 'Python', 'Node.js', 'Angular / React / TypeScript', 'JavaScript / jQuery', 'HTML5 / CSS / Bootstrap', 'IBM Watson', 'SOA / ESB', 'Oracle Service Bus', 'SOA Suite 12c', 'BPEL', 'webMethods', 'Amdocs', 'Microservices', 'WSDL / XPath / XQuery', 'MSSQL', 'MySQL', 'Oracle', 'NoSQL', 'Elasticsearch', 'Kibana', 'Hadoop', 'AWS / GCP', 'Docker', 'Jenkins', 'Puppet / Chef', 'Git', 'VMware', 'WebSphere / Liberty', 'JBoss / GlassFish / Tomcat', 'JWT / SSO', 'Swagger', 'Jira', 'DevOps']
         ],
         [
             'company' => 'GLR / POPULIS Consulting',
             'company_description' => 'Technology consulting firm delivering human resources and enterprise information management software.',
-            'role' => 'System Developer & Technical Analyst',
+            'role' => 'Sr Software Developer & Architect',
             'period' => '2008 – 2015',
             'location' => 'São Paulo, Brazil',
             'highlights' => [
@@ -129,7 +134,7 @@ return [
                 'Conducted requirements elicitation, business process modeling, and architectural specifications with corporate stakeholders.',
                 'Engineered high-throughput batch processing and enterprise web services (SOAP/REST) with zero downtime.'
             ],
-            'tags' => ['JavaEE', 'Struts / JSF / Spring', 'JSP', 'PHP', 'HTML5 / CSS / Bootstrap', 'Oracle', 'MySQL', 'SOAP / REST', 'WSDL / XPath / XQuery', 'Tomcat', 'GlassFish', 'JBoss', 'WebSphere', 'JWT / GWT / SSO', 'Swagger', 'Jira']
+            'tags' => ['JavaEE', 'Struts / JSF / Spring', 'JSP', 'PHP', 'JavaScript', 'Angular', 'HTML5 / CSS / Bootstrap', 'Oracle', 'MySQL', 'MS SQL Server', 'SOAP / REST', 'WSDL / XPath / XQuery', 'Tomcat', 'GlassFish', 'JBoss', 'WebSphere', 'JWT / GWT / SSO', 'Swagger', 'Jira']
         ],
         [
             'company' => 'TIVIT',
@@ -197,6 +202,7 @@ return [
             'Magento' => ['ntt', 'agua'],
         ],
         'DevOps & Cloud' => [
+            'Linux' => ['atrio', 'bd'],
             'Puppet' => ['ntt'],
             'PowerShell' => ['ntt', 'agua'],
             'Docker' => ['atrio', 'agua', 'ntt'],
@@ -210,9 +216,12 @@ return [
         ],
         'Databases' => [
             'MSSQL' => ['ntt', 'tivit', 'metro', 'agua'],
-            'MySQL' => ['agua', 'glr', 'tivit', 'metro', 'ntt'],
+            'MySQL' => ['atrio', 'agua', 'glr', 'tivit', 'metro', 'ntt'],
             'Oracle' => ['bd', 'glr', 'ntt'],
             'NoSQL' => ['ntt', 'agua'],
+            'PostgreSQL' => ['atrio'],
+            'MongoDB' => ['atrio'],
+            'Redis' => ['atrio'],
             'Elasticsearch' => ['bd', 'ntt'],
         ],
         'Servers' => [
