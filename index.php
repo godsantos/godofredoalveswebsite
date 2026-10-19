@@ -10,21 +10,21 @@ $selectedProjects = [
   [
     'title' => 'AtrioIQ Portfolio Intelligence',
     'category' => 'AI + FinTech',
-    'description' => 'The challenge: make fragmented filings and market data useful. I shaped the architecture and led three squads building a platform that turns those signals into explainable research.',
-    'metrics' => '17 engineers · 5 market feeds · sub-1.2s response',
+    'description' => 'AtrioIQ pulls SEC filings and market data together into equity research that explains its reasoning. I designed the architecture and lead the three squads building it.',
+    'metrics' => '17 engineers · 5 market data feeds · under 1.2s response',
     'technologies' => ['Java 17', 'FastAPI', 'React', 'AWS ECS'],
   ],
   [
-    'title' => 'Architecture Under the Microscope',
+    'title' => 'M&A Technical Due Diligence',
     'category' => 'Due Diligence',
-    'description' => 'When acquisition decisions carried real risk, I translated architecture, code quality, and technical debt into clear findings leaders could act on.',
+    'description' => 'At Synopsys / Black Duck I audited the architecture, code quality, and technical debt of companies being acquired, and wrote the findings buyers used in their decisions.',
     'metrics' => 'Dozens of Fortune 500 audit deliverables',
     'technologies' => ['Architecture Review', 'Static Analysis', 'SDLC', 'Risk'],
   ],
   [
-    'title' => 'From Incident to Automated Recovery',
+    'title' => 'Automated Incident Recovery at Mapfre',
     'category' => 'Enterprise Automation',
-    'description' => 'I led the team behind a conversational operations assistant that could diagnose incidents and trigger recovery workflows—not just report a problem.',
+    'description' => 'I led the team that built a chat-based operations assistant on IBM Watson. It diagnosed incidents and started recovery steps like restarts and failovers on its own.',
     'metrics' => 'Supporting systems serving 30M+ insurance users',
     'technologies' => ['Spring Boot', 'IBM Watson', 'AWS', 'Messaging'],
   ],
@@ -36,17 +36,17 @@ $selectedProjects = [
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f4f0e8">
-  <title><?= e($personal['name']) ?> — Software Architect & Engineering Leader</title>
+  <title><?= e($personal['name']) ?> | Software Architect & Engineering Leader</title>
   <meta name="description" content="Godofredo Alves is a Toronto-based software architect and engineering leader building resilient cloud, AI and enterprise platforms.">
   <link rel="canonical" href="<?= e($personal['site_url']) ?>/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="<?= e($personal['name']) ?> — Software Architect & Engineering Leader">
+  <meta property="og:title" content="<?= e($personal['name']) ?> | Software Architect & Engineering Leader">
   <meta property="og:description" content="20+ years turning complex systems into clear, reliable products.">
   <meta property="og:image" content="<?= e($personal['site_url']) ?>/assets/images/godofredo-portrait-2026.png">
   <meta property="og:image:alt" content="Godofredo Alves, software architect and engineering leader">
   <meta property="og:locale" content="en_CA">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="<?= e($personal['name']) ?> — Software Architect & Engineering Leader">
+  <meta name="twitter:title" content="<?= e($personal['name']) ?> | Software Architect & Engineering Leader">
   <meta name="twitter:description" content="20+ years turning complex systems into clear, reliable products.">
   <meta name="twitter:image" content="<?= e($personal['site_url']) ?>/assets/images/godofredo-portrait-2026.png">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%230b7468%22/><text x=%2250%22 y=%2265%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-weight=%22700%22 font-size=%2248%22 fill=%22white%22>GA</text></svg>">
@@ -68,8 +68,8 @@ $selectedProjects = [
       <div class="hero-copy">
         <p class="eyebrow"><span></span> Toronto · Open to the right opportunity</p>
         <h1 id="hero-title">I make complex<br>technology <em>work.</em></h1>
-        <p class="hero-intro">I’m Godofredo—an architect and hands-on engineering leader who turns ambitious AI, cloud, and enterprise ideas into dependable products.</p>
-        <div class="hero-actions"><a class="button button-dark" href="#work">See selected work <span>↓</span></a><a class="text-link" href="Godofredo_Alves-Resume-director.pdf" target="_blank" rel="noopener">View résumé ↗</a></div>
+        <p class="hero-intro">I’m Godofredo, an architect and hands-on engineering leader who turns ambitious AI, cloud, and enterprise ideas into dependable products.</p>
+        <div class="hero-actions"><a class="button button-dark" href="#work">See selected work <span>↓</span></a><a class="text-link" href="Godofredo_Alves-Resume-fullstack.pdf" target="_blank" rel="noopener">View résumé ↗</a></div>
       </div>
       <div class="hero-portrait">
         <div class="portrait-frame"><img src="assets/images/godofredo-portrait-2026.png" onerror="this.src='<?= e($personal['photo']) ?>'" alt="Godofredo Alves, software architect and engineering leader" width="1024" height="1536" decoding="async" fetchpriority="high"></div>
@@ -78,11 +78,11 @@ $selectedProjects = [
     </section>
 
     <section class="proof-strip" aria-label="Career highlights">
-      <div><strong>17</strong><span>engineers led</span></div><div><strong>3</strong><span>squads directed</span></div><div><strong>30M+</strong><span>users impacted</span></div><div><strong>AI → Cloud</strong><span>strategy to code</span></div>
+      <div><strong>17</strong><span>engineers across 3 squads</span></div><div><strong>30M+</strong><span>Mapfre customers served</span></div><div><strong>100M+</strong><span>Telefónica customers served</span></div><div><strong>4 yrs</strong><span>M&amp;A due diligence</span></div>
     </section>
 
     <section class="section shell" id="work">
-      <div class="section-lead"><p class="kicker">Selected impact</p><h2>Proof over promises.</h2><p>Three examples of turning high-stakes complexity into outcomes.</p></div>
+      <div class="section-lead"><p class="kicker">Projects</p><h2>Selected work</h2><p>Three projects I led, and what came out of them.</p></div>
       <div class="work-grid">
         <?php foreach ($selectedProjects as $index => $project): ?>
           <article class="work-card<?= $index === 0 ? ' featured' : '' ?>">
@@ -97,7 +97,7 @@ $selectedProjects = [
 
     <section class="section experience-section" id="experience">
       <div class="shell experience-layout">
-        <div class="section-lead sticky-lead"><p class="kicker">Career, distilled</p><h2>Builder.<br>Leader.<br>Translator.</h2><p>From code to boardroom, I help technical and business teams move in the same direction.</p><a class="text-link" href="Godofredo_Alves-Resume-fullstack.pdf" target="_blank" rel="noopener">Full career details ↗</a></div>
+        <div class="section-lead sticky-lead"><p class="kicker">Experience</p><h2>Recent roles</h2><p>My last three positions. The full résumé goes back to 2008 and includes my work for Santander, Mapfre, and Telefónica.</p><a class="text-link" href="Godofredo_Alves-Resume-fullstack.pdf" target="_blank" rel="noopener">Full career details ↗</a></div>
         <div class="role-list">
           <?php foreach ($selectedExperience as $index => $job): ?>
             <article class="role-item">
@@ -112,7 +112,7 @@ $selectedProjects = [
     </section>
 
     <section class="section shell" id="expertise">
-      <div class="section-lead horizontal-lead"><div><p class="kicker">How I help</p><h2>Useful across the stack.</h2></div><p>Deep enough to design the system. Practical enough to ship it. Clear enough to bring people with me.</p></div>
+      <div class="section-lead horizontal-lead"><div><p class="kicker">How I help</p><h2>What I work on</h2></div><p>Most of my work falls into these four areas.</p></div>
       <div class="expertise-grid">
         <article><span>01</span><h3>Architecture</h3><p>Resilient distributed systems, cloud platforms, APIs and event-driven services.</p></article>
         <article><span>02</span><h3>AI engineering</h3><p>LLM orchestration, RAG, evaluation, guardrails and production AI workflows.</p></article>

@@ -24,7 +24,7 @@ return [
     'metrics' => [
         ['value' => '20+', 'label' => 'Years of Engineering', 'sub' => 'From Enterprise Java/C# to AI-first Cloud Microservices'],
         ['value' => '17', 'label' => 'Engineers Led Across 3 Squads', 'sub' => 'Platform, AI & Data, Frontend & QA at AtrioIQ'],
-        ['value' => '30M+', 'label' => 'Users Impacted', 'sub' => 'In Tier-1 Bank (Santander) & Telecom (Telefónica) systems'],
+        ['value' => '30M+', 'label' => 'Users Impacted', 'sub' => 'Mapfre insurance systems (Telefónica: 100M+)'],
         ['value' => '100%', 'label' => 'Production Reliability', 'sub' => 'Strict ADRs, Resilience4j, Automated CI/CD & Audit Gates'],
     ],
     'competencies' => [
@@ -85,7 +85,7 @@ return [
                 'Conducted deep software quality, design, and SDLC process audits for major technology acquisitions and M&A due diligence.',
                 'Analyzed code metrics, architecture modularity, cyclomatic complexity, maintainability indexes, and risk profiles.',
                 'Evaluated customer development procedures, tools, and technical documentation to provide actionable refactoring roadmaps.',
-                'Built internal automation tooling and analysis engines that drastically improved the throughput of Black Duck audit deliverables.',
+                'Built internal automation and analysis tools that sped up the delivery of Black Duck audit reports.',
                 'Mentored junior and mid-level consultants on enterprise architectural evaluation and forensic code analysis.'
             ],
             'tags' => ['Software Architecture', 'Code Quality Audits', 'M&A Due Diligence', 'Static Analysis', 'SDLC Governance', 'Risk Analysis']
@@ -133,7 +133,7 @@ return [
     ],
     'skills_matrix' => [
         'AI & Machine Learning' => [
-            'Claude 3.5 Sonnet / Opus APIs', 'OpenAI GPT-4o', 'Google Gemini 1.5 Pro', 'RAG (Retrieval-Augmented Generation)', 'Prompt Engineering', 'Structured JSON Output Validation', 'AI Coding Agents (Claude Code, Codex)', 'Evaluation & Guardrail Frameworks'
+            'Anthropic Claude API', 'OpenAI API', 'Google Gemini API', 'RAG (Retrieval-Augmented Generation)', 'Prompt Engineering', 'Structured JSON Output Validation', 'AI Coding Agents (Claude Code, Codex)', 'Evaluation & Guardrail Frameworks'
         ],
         'Backend & Architecture' => [
             'Java 17 / Spring Boot', 'Python (FastAPI, Flask)', 'PHP 8.x', 'Node.js / Express', 'Microservices Architecture', 'Event-Driven (SQS / SNS / Kafka)', 'Spring Data JPA & Spring Batch', 'Resilience4j Circuit Breakers', 'OpenAPI / Swagger'
