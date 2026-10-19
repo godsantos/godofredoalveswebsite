@@ -4,6 +4,7 @@ $personal = $data['personal'];
 $experience = $data['experience'];
 $skills = $data['skills_matrix'];
 function e($value) { return htmlspecialchars($value, ENT_QUOTES, 'UTF-8'); }
+$assetVersion = '20261019-2';
 
 $projects = [
   [
@@ -16,8 +17,8 @@ $projects = [
   [
     'title' => 'M&A Technical Due Diligence',
     'category' => 'Synopsys / Black Duck',
-    'description' => 'I audited the architecture, code quality, and technical debt of companies being acquired, and wrote the findings buyers used in their decisions.',
-    'metrics' => ['4 years', 'Dozens of Fortune 500 audits'],
+    'description' => 'At Synopsys / Black Duck, I assessed software architecture, code quality, development practices, and SDLC maturity for transaction due diligence. I interviewed engineering stakeholders, analyzed maintainability and ownership risks, and delivered recommendations for merger, acquisition, and sale decisions.',
+    'metrics' => ['4 years', 'Architecture and code-quality due diligence'],
     'technologies' => ['Architecture Review', 'Static Analysis', 'SDLC', 'Risk'],
   ],
   [
@@ -59,7 +60,7 @@ $resume = 'Godofredo_Alves-Resume-fullstack.pdf';
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/styles.css?v=<?= e($assetVersion) ?>">
 </head>
 <body>
   <div class="progress" aria-hidden="true"></div>
@@ -82,7 +83,7 @@ $resume = 'Godofredo_Alves-Resume-fullstack.pdf';
         <div class="hero-actions reveal"><a class="button button-dark" href="#work">See selected work <span>↓</span></a><a class="text-link" href="<?= e($resume) ?>" target="_blank" rel="noopener">View résumé ↗</a></div>
       </div>
       <div class="hero-portrait reveal">
-        <div class="portrait-frame"><img src="assets/images/godofredo-portrait-2026.png" alt="Godofredo Alves" width="1024" height="1536" fetchpriority="high"></div>
+        <div class="portrait-frame"><img src="assets/images/godofredo-portrait-2026.png?v=<?= e($assetVersion) ?>" alt="Godofredo Alves" width="1024" height="1536" fetchpriority="high"></div>
         <div class="portrait-note"><strong><span data-count="20">20</span>+</strong><span>years shipping<br>software</span></div>
       </div>
     </section>
@@ -103,7 +104,7 @@ $resume = 'Godofredo_Alves-Resume-fullstack.pdf';
     <section class="section shell" id="work">
       <div class="work-intro">
         <div class="section-lead reveal"><p class="kicker">Projects</p><h2>Selected work</h2><p>Four projects I led. Pick one to see the details.</p></div>
-        <figure class="project-visual reveal"><img src="assets/images/atrioiq-architecture.png" alt="AtrioIQ architecture showing financial data flowing through grounded multi-agent AI analysis into portfolio insights" width="1536" height="1024" loading="lazy" decoding="async"><span class="architecture-core" aria-hidden="true"></span><span class="data-signal signal-one" aria-hidden="true"></span><span class="data-signal signal-two" aria-hidden="true"></span><span class="data-signal signal-three" aria-hidden="true"></span></figure>
+        <figure class="project-visual reveal"><img src="assets/images/atrioiq-architecture.png?v=<?= e($assetVersion) ?>" alt="AtrioIQ architecture showing financial data flowing through grounded multi-agent AI analysis into portfolio insights" width="1536" height="1024" loading="lazy" decoding="async"><span class="architecture-core" aria-hidden="true"></span><span class="data-signal signal-one" aria-hidden="true"></span><span class="data-signal signal-two" aria-hidden="true"></span><span class="data-signal signal-three" aria-hidden="true"></span></figure>
       </div>
       <div class="work" data-work>
         <ol class="work-list" role="tablist" aria-label="Projects">
@@ -181,6 +182,6 @@ $resume = 'Godofredo_Alves-Resume-fullstack.pdf';
     </section>
   </main>
   <footer class="site-footer shell"><span>© <?= date('Y') ?> Godofredo Alves</span><span>Toronto, Ontario, Canada</span></footer>
-  <script src="assets/js/main.js"></script>
+  <script src="assets/js/main.js?v=<?= e($assetVersion) ?>"></script>
 </body>
 </html>

@@ -174,10 +174,10 @@ return [
             'technologies' => ['RAG', 'Multi-Agent LLMs', 'Python FastAPI', 'React', 'AWS ECS', 'Claude/OpenAI/Gemini']
         ],
         [
-            'title' => 'Black Duck Architecture & Security Audit Framework',
-            'category' => 'Enterprise Due Diligence',
-            'description' => 'Conducted deep forensic software design audits and technical due diligence assessments for multi-million dollar tech mergers and acquisitions, pinpointing systemic debt, licensing risk, and security vulnerabilities.',
-            'metrics' => 'Dozens of Fortune 500 audit deliverables completed',
+            'title' => 'Black Duck Architecture & Software Quality Audits',
+            'category' => 'Software Quality & Due Diligence',
+            'description' => 'Assessed software architecture, code quality, development practices, and SDLC maturity for transaction due diligence. Interviewed engineering stakeholders, analyzed maintainability and ownership risks, and delivered recommendations for merger, acquisition, and sale decisions.',
+            'metrics' => '4 years of architecture and code-quality due diligence',
             'technologies' => ['Architecture Review', 'Code Quality Metrics', 'Static Analysis', 'SDLC Governance']
         ],
         [

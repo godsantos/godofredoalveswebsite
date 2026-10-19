@@ -5,6 +5,7 @@ $experience = $data['experience'];
 $projects = $data['featured_projects'];
 $skills = $data['skills_matrix'];
 function e($value) { return htmlspecialchars($value, ENT_QUOTES, 'UTF-8'); }
+$assetVersion = '20261019-2';
 $selectedExperience = array_slice($experience, 0, 3);
 $selectedProjects = [
   [
@@ -17,8 +18,8 @@ $selectedProjects = [
   [
     'title' => 'M&A Technical Due Diligence',
     'category' => 'Due Diligence',
-    'description' => 'At Synopsys / Black Duck I audited the architecture, code quality, and technical debt of companies being acquired, and wrote the findings buyers used in their decisions.',
-    'metrics' => 'Dozens of Fortune 500 audit deliverables',
+    'description' => 'At Synopsys / Black Duck, I assessed software architecture, code quality, development practices, and SDLC maturity for transaction due diligence. I interviewed engineering stakeholders, analyzed maintainability and ownership risks, and delivered recommendations for merger, acquisition, and sale decisions.',
+    'metrics' => '4 years of architecture and code-quality due diligence',
     'technologies' => ['Architecture Review', 'Static Analysis', 'SDLC', 'Risk'],
   ],
   [
@@ -54,7 +55,7 @@ $selectedProjects = [
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=<?= e($assetVersion) ?>">
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
@@ -129,6 +130,6 @@ $selectedProjects = [
     </section>
   </main>
   <footer class="site-footer shell"><span>© <?= date('Y') ?> Godofredo Alves</span><span>Toronto, Ontario, Canada · <?= e($personal['email']) ?></span></footer>
-  <script src="main.js"></script>
+  <script src="main.js?v=<?= e($assetVersion) ?>"></script>
 </body>
 </html>
