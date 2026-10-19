@@ -136,6 +136,43 @@ document.addEventListener('DOMContentLoaded', () => {
     }, { threshold: 0.4 }).observe(work);
   }
 
+  // Technical skills: filter by company, and show where a skill was used
+  const skillsBox = document.querySelector('[data-skills]');
+  if (skillsBox) {
+    const buttons = [...skillsBox.querySelectorAll('[data-co]')].filter((el) => el.tagName === 'BUTTON');
+    const grid = skillsBox.querySelector('.skill-grid');
+    const items = [...grid.querySelectorAll('li')];
+    const hint = skillsBox.querySelector('.skill-hint');
+    const names = Object.fromEntries(buttons.map((b) => [b.dataset.co, b.textContent]));
+    const usedAt = (li) => li.dataset.co.split(' ').filter(Boolean);
+    let active = 'all';
+    const setHint = (text) => { hint.textContent = text || ' '; };
+    const defaultHint = () => {
+      if (active === 'all') return setHint('');
+      const n = items.filter((li) => usedAt(li).includes(active)).length;
+      setHint(`${n} skill${n === 1 ? '' : 's'} used at ${names[active]}`);
+    };
+    buttons.forEach((btn) => btn.addEventListener('click', () => {
+      active = btn.dataset.co;
+      buttons.forEach((b) => b.setAttribute('aria-pressed', b === btn));
+      grid.classList.toggle('filtered', active !== 'all');
+      items.forEach((li) => li.classList.toggle('on', usedAt(li).includes(active)));
+      defaultHint();
+    }));
+    const show = (li) => {
+      const at = usedAt(li);
+      buttons.forEach((b) => b.classList.toggle('hit', at.includes(b.dataset.co)));
+      setHint(at.length ? `${li.textContent}: used at ${at.map((k) => names[k]).join(', ')}` : '');
+    };
+    const clear = () => { buttons.forEach((b) => b.classList.remove('hit')); defaultHint(); };
+    items.forEach((li) => {
+      li.addEventListener('mouseenter', () => show(li));
+      li.addEventListener('focus', () => show(li));
+      li.addEventListener('mouseleave', clear);
+      li.addEventListener('blur', clear);
+    });
+  }
+
   // Skill chips
   const chips = [...document.querySelectorAll('[data-skill]')];
   const sets = [...document.querySelectorAll('[data-set]')];

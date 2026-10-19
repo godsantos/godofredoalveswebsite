@@ -3,8 +3,10 @@ $data = require __DIR__ . '/data.php';
 $personal = $data['personal'];
 $experience = $data['experience'];
 $skills = $data['skills_matrix'];
+$skillCompanies = $data['skill_companies'];
+$technicalSkills = $data['technical_skills'];
 function e($value) { return htmlspecialchars($value, ENT_QUOTES, 'UTF-8'); }
-$assetVersion = '20261019-2';
+$assetVersion = '20261019-3';
 
 $projects = [
   [
@@ -66,7 +68,7 @@ $resume = 'Godofredo_Alves-Resume-fullstack.pdf';
   <div class="progress" aria-hidden="true"></div>
   <header class="site-header">
     <a class="wordmark" href="#top" aria-label="Back to top">GA<span>.</span></a>
-    <nav aria-label="Primary navigation"><a href="#work">Work</a><a href="#career">Career</a><a href="#expertise">Expertise</a></nav>
+    <nav aria-label="Primary navigation"><a href="#work">Work</a><a href="#career">Career</a><a href="#expertise">Expertise</a><a href="#skills">Skills</a></nav>
     <a class="header-cta" href="#contact">Let’s talk</a>
   </header>
 
@@ -140,6 +142,7 @@ $resume = 'Godofredo_Alves-Resume-fullstack.pdf';
               <p class="meta"><span><?= e($job['company']) ?></span><span><?= e($job['period']) ?><?= $job['location'] ? ' · ' . e($job['location']) : '' ?></span></p>
               <h3><?= e($job['role']) ?></h3>
               <p><?= e($job['highlights'][0]) ?></p>
+              <?php if (!empty($job['tags'])): ?><ul class="role-tags" aria-label="Technologies"><?php foreach ($job['tags'] as $tag): ?><li><?= e($tag) ?></li><?php endforeach; ?></ul><?php endif; ?>
               <?php if (count($job['highlights']) > 1): ?>
                 <details><summary>More <span>+</span></summary><div><ul><?php foreach (array_slice($job['highlights'], 1) as $h): ?><li><?= e($h) ?></li><?php endforeach; ?></ul></div></details>
               <?php endif; ?>
@@ -157,13 +160,22 @@ $resume = 'Godofredo_Alves-Resume-fullstack.pdf';
         <article class="reveal"><span>03</span><h3>Technical leadership</h3><p>Architecture decisions, delivery process, mentoring and engineering standards.</p></article>
         <article class="reveal"><span>04</span><h3>Due diligence</h3><p>Architecture health, code quality, technical debt and acquisition risk.</p></article>
       </div>
-      <div class="toolbox reveal">
-        <div class="chips" role="tablist" aria-label="Technology categories">
-          <?php $k = 0; foreach ($skills as $category => $items): ?><button role="tab" aria-selected="<?= $k === 0 ? 'true' : 'false' ?>" data-skill="<?= $k ?>"><?= e($category) ?></button><?php $k++; endforeach; ?>
-        </div>
-        <?php $k = 0; foreach ($skills as $category => $items): ?>
-          <ul class="skill-set<?= $k === 0 ? ' active' : '' ?>" data-set="<?= $k ?>"<?= $k ? ' hidden' : '' ?>><?php foreach ($items as $n => $item): ?><li style="--i:<?= $n ?>"><?= e($item) ?></li><?php endforeach; ?></ul>
-        <?php $k++; endforeach; ?>
+    </section>
+
+    <section class="section shell skills" id="skills" data-skills>
+      <div class="section-lead reveal"><p class="kicker">Technical skills</p><h2>Hands-on with</h2><p>Pick a company to see what I used there, or point at a skill to see where I used it.</p></div>
+      <div class="company-filter reveal" role="group" aria-label="Filter skills by company">
+        <button type="button" data-co="all" aria-pressed="true">All</button>
+        <?php foreach ($skillCompanies as $key => $label): ?><button type="button" data-co="<?= e($key) ?>" aria-pressed="false"><?= e($label) ?></button><?php endforeach; ?>
+      </div>
+      <p class="skill-hint" aria-live="polite">&nbsp;</p>
+      <div class="skill-grid">
+        <?php foreach ($technicalSkills as $category => $items): ?>
+          <div class="skill-cat reveal">
+            <h3><?= e($category) ?></h3>
+            <ul><?php foreach ($items as $skill => $used): ?><li tabindex="0" data-co="<?= e(implode(' ', $used)) ?>"><?= e($skill) ?></li><?php endforeach; ?></ul>
+          </div>
+        <?php endforeach; ?>
       </div>
     </section>
 

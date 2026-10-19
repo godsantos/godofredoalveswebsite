@@ -153,6 +153,99 @@ return [
             'tags' => ['Python', 'Back-End Web Development']
         ]
     ],
+    // Companies that can be used as filters in the technical skills section
+    'skill_companies' => [
+        'atrio' => 'AtrioIQ',
+        'bd' => 'Synopsys / Black Duck',
+        'agua' => 'Agua Limpa',
+        'ntt' => 'Everis / NTT DATA',
+        'glr' => 'GLR / POPULIS',
+        'tivit' => 'TIVIT',
+        'metro' => 'Metropolitan Logistics',
+    ],
+    // Category => [skill => company keys where it was used]
+    'technical_skills' => [
+        'AI & LLM' => [
+            'Claude, OpenAI, Gemini APIs' => ['atrio'],
+            'Prompt engineering' => ['atrio'],
+            'RAG / structured output' => ['atrio'],
+            'AI agents (Claude Code, Codex)' => ['atrio'],
+        ],
+        'Back-end' => [
+            'Java 17 / Spring Boot' => ['atrio', 'agua', 'ntt'],
+            'PHP' => ['agua', 'glr'],
+            'Python (FastAPI)' => ['atrio', 'bd', 'ntt', 'tivit', 'metro'],
+            'Node.js' => ['atrio', 'agua', 'ntt'],
+            '.NET' => ['ntt', 'glr'],
+            'C#' => [],
+        ],
+        'Front-end' => [
+            'Angular, React, TypeScript' => ['atrio', 'bd', 'agua'],
+            'Webpack, Protractor' => [],
+            'Karma' => [],
+            'Django' => [],
+            'HTML5, CSS, Bootstrap' => ['agua'],
+            'AJAX' => [],
+            'XML' => [],
+            'JavaScript, jQuery' => [],
+            'JSP' => ['glr'],
+        ],
+        'Frameworks' => [
+            'Struts, JSF, Spring' => ['glr', 'ntt'],
+            'WordPress' => [],
+            'Magento' => [],
+        ],
+        'DevOps & Cloud' => [
+            'Puppet' => ['ntt'],
+            'PowerShell' => [],
+            'Docker' => ['atrio', 'agua', 'ntt'],
+            'Hadoop' => [],
+            'Jenkins' => ['agua'],
+            'Git, GitHub Actions' => ['atrio'],
+            'AWS (ECS, SQS, RDS), GCP' => ['atrio', 'agua', 'ntt'],
+            'Chef' => [],
+            'Lua' => [],
+            'VMware' => [],
+        ],
+        'Databases' => [
+            'MSSQL' => [],
+            'MySQL' => ['agua', 'glr'],
+            'Oracle' => ['bd', 'glr'],
+            'NoSQL' => [],
+            'Elasticsearch' => ['bd'],
+        ],
+        'Servers' => [
+            'Liberty' => [],
+            'Apache Tomcat' => [],
+            'GlassFish' => [],
+            'JBoss' => [],
+            'WebSphere' => [],
+        ],
+        'SOA & Integration' => [
+            'SOA architecture' => [],
+            'ESB bus' => [],
+            'SOA Suite 12c' => [],
+            'webMethods' => [],
+            'Oracle Service Bus (OSB)' => ['ntt'],
+            'BPEL' => ['ntt'],
+            'Data governance' => [],
+            'Canonical model' => [],
+            'TAM Governance Pad' => [],
+            'Web services (SOAP, RESTful)' => ['glr'],
+            'WSDL, XPath, XQuery' => [],
+            'Microservices' => ['atrio', 'agua', 'ntt'],
+        ],
+        'Authentication' => [
+            'JWT, GWT, SSO' => [],
+        ],
+        'Management & Docs' => [
+            'Jira' => ['bd'],
+            'Trello' => [],
+            'Visual Studio' => [],
+            'Microsoft Project' => [],
+            'Swagger' => [],
+        ],
+    ],
     'skills_matrix' => [
         'AI & Machine Learning' => [
             'Anthropic Claude API', 'OpenAI API', 'Google Gemini API', 'RAG (Retrieval-Augmented Generation)', 'Prompt Engineering', 'Structured JSON Output Validation', 'AI Coding Agents (Claude Code, Codex)', 'Evaluation & Guardrail Frameworks'
