@@ -49,6 +49,13 @@ $projects = [
     'metrics' => ['5 engineers', 'Release cycles from months to hours'],
     'technologies' => ['Docker', 'AWS', 'JavaEE', 'Python', 'Puppet'],
   ],
+  [
+    'title' => 'Telefónica Billing Integration',
+    'category' => 'Telecom',
+    'description' => 'As solutions architect, I led the team that connected Telefónica’s legacy Amdocs billing platform to its other systems through a governed SOA layer, using Oracle Service Bus, BPEL orchestration, and Java Spring microservices.',
+    'metrics' => ['7 engineers', '100M+ customers on the billing platform'],
+    'technologies' => ['Oracle Service Bus', 'BPEL', 'Java Spring', 'Microservices', 'Amdocs', 'SOA Governance'],
+  ],
 ];
 $companies = [
   'AtrioIQ' => 'https://atrioiq.com',
@@ -118,7 +125,7 @@ $resume = 'Godofredo_Alves-Resume-fullstack.pdf';
 
     <section class="section shell" id="work">
       <div class="work-intro">
-        <div class="section-lead reveal"><p class="kicker">Projects</p><h2>Selected work</h2><p>Four projects I led. Pick one to see the details.</p></div>
+        <div class="section-lead reveal"><p class="kicker">Projects</p><h2>Selected work</h2><p>Five projects I led. Pick one to see the details.</p></div>
         <figure class="project-visual reveal"><img src="assets/images/atrioiq-architecture.png?v=<?= e($assetVersion) ?>" alt="AtrioIQ architecture showing financial data flowing through grounded multi-agent AI analysis into portfolio insights" width="1536" height="1024" loading="lazy" decoding="async"><span class="architecture-core" aria-hidden="true"></span><span class="data-signal signal-one" aria-hidden="true"></span><span class="data-signal signal-two" aria-hidden="true"></span><span class="data-signal signal-three" aria-hidden="true"></span></figure>
       </div>
       <div class="work" data-work>
