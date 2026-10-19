@@ -103,7 +103,7 @@ return [
                 'Engineered responsive SPAs using Angular, React, Vue.js, and modern CSS/Bootstrap.',
                 'Implemented TDD, automated mock frameworks, and continuous delivery with Jenkins, Docker, and AWS.'
             ],
-            'tags' => ['Java Spring Boot', 'PHP', 'Node.js', 'React', 'Angular', 'AWS', 'Docker', 'MySQL', 'TDD']
+            'tags' => ['Java Spring Boot', 'PHP', 'Node.js', 'React', 'Angular', 'AWS', 'Docker', 'MySQL', 'TDD', 'Jira']
         ],
         [
             'company' => 'Everis / NTT DATA Consulting',
