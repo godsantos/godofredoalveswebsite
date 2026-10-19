@@ -129,7 +129,7 @@ return [
                 'Conducted requirements elicitation, business process modeling, and architectural specifications with corporate stakeholders.',
                 'Engineered high-throughput batch processing and enterprise web services (SOAP/REST) with zero downtime.'
             ],
-            'tags' => ['JavaEE', 'PHP', 'Oracle', 'MySQL', 'Struts/JSP', 'SOAP / REST', 'Enterprise Systems']
+            'tags' => ['JavaEE', 'Struts / JSF / Spring', 'JSP', 'PHP', 'HTML5 / CSS / Bootstrap', 'Oracle', 'MySQL', 'SOAP / REST', 'WSDL / XPath / XQuery', 'Tomcat', 'GlassFish', 'JBoss', 'WebSphere', 'JWT / GWT / SSO', 'Swagger', 'Jira']
         ],
         [
             'company' => 'TIVIT',
@@ -173,7 +173,7 @@ return [
             'AI agents (Claude Code, Codex)' => ['atrio'],
         ],
         'Back-end' => [
-            'Java 17 / Spring Boot' => ['atrio', 'agua', 'ntt', 'tivit', 'metro'],
+            'Java 17 / Spring Boot' => ['atrio', 'agua', 'ntt', 'tivit', 'metro', 'glr'],
             'PHP' => ['agua', 'glr', 'tivit', 'metro'],
             'Python (FastAPI)' => ['atrio', 'bd', 'ntt'],
             'Node.js' => ['atrio', 'agua', 'ntt'],
@@ -185,7 +185,7 @@ return [
             'Webpack, Protractor' => ['ntt'],
             'Karma' => ['ntt'],
             'Django' => ['ntt'],
-            'HTML5, CSS, Bootstrap' => ['agua', 'tivit', 'metro'],
+            'HTML5, CSS, Bootstrap' => ['agua', 'tivit', 'metro', 'glr'],
             'AJAX' => ['ntt', 'tivit', 'metro'],
             'XML' => ['ntt'],
             'JavaScript, jQuery' => ['ntt', 'tivit', 'metro'],
@@ -217,10 +217,10 @@ return [
         ],
         'Servers' => [
             'Liberty' => ['ntt'],
-            'Apache Tomcat' => ['ntt'],
-            'GlassFish' => ['ntt'],
-            'JBoss' => ['ntt'],
-            'WebSphere' => ['ntt'],
+            'Apache Tomcat' => ['ntt', 'glr'],
+            'GlassFish' => ['ntt', 'glr'],
+            'JBoss' => ['ntt', 'glr'],
+            'WebSphere' => ['ntt', 'glr'],
         ],
         'SOA & Integration' => [
             'SOA architecture' => ['ntt'],
@@ -233,18 +233,18 @@ return [
             'Canonical Model' => ['ntt'],
             'TAM Governance Patterns' => ['ntt'],
             'Web services (SOAP, RESTful)' => ['glr'],
-            'WSDL, XPath, XQuery' => ['ntt'],
+            'WSDL, XPath, XQuery' => ['ntt', 'glr'],
             'Microservices' => ['atrio', 'agua', 'ntt'],
         ],
         'Authentication' => [
-            'JWT, GWT, SSO' => ['ntt'],
+            'JWT, GWT, SSO' => ['ntt', 'glr'],
         ],
         'Management & Docs' => [
-            'Jira' => ['bd'],
+            'Jira' => ['bd', 'glr'],
             'Trello' => ['ntt'],
             'Visual Studio' => ['ntt'],
             'Microsoft Project' => ['ntt'],
-            'Swagger' => ['ntt'],
+            'Swagger' => ['ntt', 'glr'],
         ],
     ],
     'skills_matrix' => [
