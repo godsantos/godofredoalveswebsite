@@ -9,9 +9,9 @@ $projects = [
   [
     'title' => 'AtrioIQ Portfolio Intelligence',
     'category' => 'AI + FinTech',
-    'description' => 'AtrioIQ pulls SEC filings and market data together into equity research that explains its reasoning. I designed the architecture and lead the three squads building it.',
-    'metrics' => ['17 engineers', '5 market data feeds', 'Under 1.2s response'],
-    'technologies' => ['Java 17', 'FastAPI', 'React', 'AWS ECS', 'Claude / Gemini'],
+    'description' => 'AtrioIQ is an AI-native portfolio intelligence platform that turns holdings, SEC filings, market data, and news into portfolio-specific financial research. I architected its multi-agent LLM pipeline—with RAG-grounded fact sheets, specialized risk, valuation, and event agents, adversarial review, confidence scoring, and flexible Claude, OpenAI, and Gemini orchestration—and lead the three squads building it.',
+    'metrics' => ['17 engineers', '5 market data feeds', '4 specialized AI agents'],
+    'technologies' => ['RAG', 'Multi-Agent LLMs', 'FastAPI', 'React', 'AWS ECS'],
   ],
   [
     'title' => 'M&A Technical Due Diligence',

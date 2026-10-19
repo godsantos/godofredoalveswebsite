@@ -169,9 +169,9 @@ return [
         [
             'title' => 'AtrioIQ - AI Portfolio Intelligence Platform',
             'category' => 'FinTech & AI SaaS',
-            'description' => 'Architected and built an institutional-grade portfolio intelligence platform for self-directed investors. Ingests SEC filings and market data to compute quantitative credit and risk metrics, orchestrated through a multi-model AI analyst engine.',
-            'metrics' => '17-engineer team • 5 market feeds • <1.2s response time',
-            'technologies' => ['Java 17', 'Spring Boot', 'Python FastAPI', 'React', 'AWS ECS', 'Claude/Gemini APIs']
+            'description' => 'Architected an AI-native portfolio intelligence platform that grounds financial research in holdings, SEC filings, market data, and news. Its multi-agent LLM pipeline combines RAG fact sheets, risk and valuation analysis, adversarial review, confidence scoring, and flexible Claude, OpenAI, and Gemini orchestration.',
+            'metrics' => '17-engineer team • 5 market feeds • 4 specialized AI agents',
+            'technologies' => ['RAG', 'Multi-Agent LLMs', 'Python FastAPI', 'React', 'AWS ECS', 'Claude/OpenAI/Gemini']
         ],
         [
             'title' => 'Black Duck Architecture & Security Audit Framework',
