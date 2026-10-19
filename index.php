@@ -67,7 +67,7 @@ $companies = [
   'NTT DATA' => 'https://www.nttdata.com',
   'Everis' => 'https://www.nttdata.com',
 ];
-$resume = 'Godofredo_Alves-Resume-fullstack.pdf';
+$resume = 'Godofredo_Alves-Resume.pdf';
 ?>
 <!doctype html>
 <html lang="en">

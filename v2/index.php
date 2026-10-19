@@ -71,7 +71,7 @@ $selectedProjects = [
         <p class="eyebrow"><span></span> Toronto, Ontario, Canada</p>
         <h1 id="hero-title">I make complex<br>technology <em>work.</em></h1>
         <p class="hero-intro">I’m Godofredo, an architect and hands-on engineering leader who turns ambitious AI, cloud, and enterprise ideas into dependable products.</p>
-        <div class="hero-actions"><a class="button button-dark" href="#work">See selected work <span>↓</span></a><a class="text-link" href="../Godofredo_Alves-Resume-fullstack.pdf" target="_blank" rel="noopener">View résumé ↗</a></div>
+        <div class="hero-actions"><a class="button button-dark" href="#work">See selected work <span>↓</span></a><a class="text-link" href="../Godofredo_Alves-Resume.pdf" target="_blank" rel="noopener">View résumé ↗</a></div>
       </div>
       <div class="hero-portrait">
         <div class="portrait-frame"><img src="../assets/images/godofredo-portrait-2026.png" onerror="this.src='<?= e($personal['photo']) ?>'" alt="Godofredo Alves, software architect and engineering leader" width="1024" height="1536" decoding="async" fetchpriority="high"></div>
@@ -99,7 +99,7 @@ $selectedProjects = [
 
     <section class="section experience-section" id="experience">
       <div class="shell experience-layout">
-        <div class="section-lead sticky-lead"><p class="kicker">Experience</p><h2>Recent roles</h2><p>My last three positions. The full résumé goes back to 2006 and includes my work for Santander, Mapfre, and Telefónica.</p><a class="text-link" href="../Godofredo_Alves-Resume-fullstack.pdf" target="_blank" rel="noopener">Full career details ↗</a></div>
+        <div class="section-lead sticky-lead"><p class="kicker">Experience</p><h2>Recent roles</h2><p>My last three positions. The full résumé goes back to 2006 and includes my work for Santander, Mapfre, and Telefónica.</p><a class="text-link" href="../Godofredo_Alves-Resume.pdf" target="_blank" rel="noopener">Full career details ↗</a></div>
         <div class="role-list">
           <?php foreach ($selectedExperience as $index => $job): ?>
             <article class="role-item">
