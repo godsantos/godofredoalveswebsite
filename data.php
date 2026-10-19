@@ -89,7 +89,7 @@ return [
                 'Recommended improvements to process, code, design, and architecture to raise quality and cut development and maintenance costs.',
                 'Improved Black Duck’s own audit process by building new internal tools and automation, and mentored junior engineers.'
             ],
-            'tags' => ['Software Architecture', 'Code Quality Audits', 'M&A Due Diligence', 'Static Analysis', 'SDLC Governance', 'Risk Analysis', 'Java', 'Python', 'React', 'Angular', 'SQL', 'Oracle', 'Elasticsearch', 'Kibana', 'Jira', 'SonarQube']
+            'tags' => ['Software Architecture', 'Code Quality Audits', 'M&A Due Diligence', 'Static Analysis', 'SDLC Governance', 'Risk Analysis', 'Java', 'Spring Boot', 'Spring MVC', 'Python', 'React', 'Angular', 'SQL', 'Oracle', 'Elasticsearch', 'Kibana', 'Jira', 'SonarQube']
         ],
         [
             'company' => 'Agua Limpa',
@@ -173,7 +173,7 @@ return [
             'AI agents (Claude Code, Codex)' => ['atrio'],
         ],
         'Back-end' => [
-            'Java 17 / Spring Boot' => ['atrio', 'agua', 'ntt', 'tivit', 'metro', 'glr'],
+            'Java 17 / Spring Boot' => ['atrio', 'agua', 'ntt', 'tivit', 'metro', 'glr', 'bd'],
             'PHP' => ['agua', 'glr', 'tivit', 'metro'],
             'Python (FastAPI)' => ['atrio', 'bd', 'ntt'],
             'Node.js' => ['atrio', 'agua', 'ntt'],
@@ -192,7 +192,7 @@ return [
             'JSP' => ['glr', 'tivit', 'metro', 'ntt'],
         ],
         'Frameworks' => [
-            'Struts, JSF, Spring' => ['glr', 'ntt', 'tivit', 'metro', 'agua'],
+            'Struts, JSF, Spring' => ['glr', 'ntt', 'tivit', 'metro', 'agua', 'bd'],
             'WordPress' => ['ntt', 'agua'],
             'Magento' => ['ntt', 'agua'],
         ],

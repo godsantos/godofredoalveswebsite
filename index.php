@@ -21,7 +21,7 @@ $projects = [
     'category' => 'Synopsys / Black Duck',
     'description' => 'At Synopsys / Black Duck, I assessed software architecture, code quality, development practices, and SDLC maturity for transaction due diligence. I interviewed engineering stakeholders, analyzed maintainability and ownership risks, and delivered recommendations for merger, acquisition, and sale decisions.',
     'metrics' => ['4 years', 'Architecture and code-quality due diligence'],
-    'technologies' => ['Architecture Review', 'Java', 'Python', 'React', 'Angular', 'Oracle / SQL', 'Elasticsearch', 'Kibana', 'Jira', 'SonarQube', 'Static Analysis'],
+    'technologies' => ['Architecture Review', 'Java', 'Spring Boot', 'Spring MVC', 'Python', 'React', 'Angular', 'Oracle / SQL', 'Elasticsearch', 'Kibana', 'Jira', 'SonarQube', 'Static Analysis'],
   ],
   [
     'title' => 'Automated Incident Recovery at Mapfre',
