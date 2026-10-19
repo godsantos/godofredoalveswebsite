@@ -88,7 +88,7 @@ return [
                 'Built internal automation and analysis tools that sped up the delivery of Black Duck audit reports.',
                 'Mentored junior and mid-level consultants on enterprise architectural evaluation and forensic code analysis.'
             ],
-            'tags' => ['Software Architecture', 'Code Quality Audits', 'M&A Due Diligence', 'Static Analysis', 'SDLC Governance', 'Risk Analysis']
+            'tags' => ['Software Architecture', 'Code Quality Audits', 'M&A Due Diligence', 'Static Analysis', 'SDLC Governance', 'Risk Analysis', 'Java', 'Python', 'React', 'Angular', 'SQL', 'Oracle', 'Elasticsearch']
         ],
         [
             'company' => 'Agua Limpa',
