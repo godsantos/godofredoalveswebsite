@@ -77,16 +77,17 @@ return [
         ],
         [
             'company' => 'Synopsys Inc. / Black Duck',
-            'company_description' => 'Global leader in software integrity, security, and electronic design automation (acquired by Clearlake Capital & Francisco Partners).',
+            'company_description' => 'Synopsys is a leading provider of electronic design automation software. Its software integrity business was spun out in 2024 as Black Duck, acquired by Clearlake Capital Group and Francisco Partners.',
             'role' => 'Sr. Software Architect · Sr. Staff Engineer · Tech Leader · Senior Full-Stack Software Engineer · Innovation',
             'period' => '2021 – Oct 2025',
             'location' => 'Toronto, ON',
             'highlights' => [
-                'Conducted deep software quality, design, and SDLC process audits for major technology acquisitions and M&A due diligence.',
-                'Analyzed code metrics, architecture modularity, cyclomatic complexity, maintainability indexes, and risk profiles.',
-                'Evaluated customer development procedures, tools, and technical documentation to provide actionable refactoring roadmaps.',
-                'Built internal automation and analysis tools that sped up the delivery of Black Duck audit reports.',
-                'Mentored junior and mid-level consultants on enterprise architectural evaluation and forensic code analysis.'
+                'Performed software quality, design, and process audits of client systems, ahead of sales, mergers, and acquisitions.',
+                'Analyzed code quality and architecture: code metrics, modularity, and hierarchy, and how the architecture affects maintainability. Flagged the areas most in need of refactoring.',
+                'Assessed each system’s architectural health, likely cost of ownership, and the risks that follow from them.',
+                'Reviewed the full development lifecycle (SDLC): procedures, manuals, and technical documents, plus interviews with key engineers on coding standards, processes, and tools.',
+                'Recommended improvements to process, code, design, and architecture to raise quality and cut development and maintenance costs.',
+                'Improved Black Duck’s own audit process by building new internal tools and automation, and mentored junior engineers.'
             ],
             'tags' => ['Software Architecture', 'Code Quality Audits', 'M&A Due Diligence', 'Static Analysis', 'SDLC Governance', 'Risk Analysis', 'Java', 'Python', 'React', 'Angular', 'SQL', 'Oracle', 'Elasticsearch', 'Kibana', 'Jira', 'SonarQube']
         ],
@@ -229,8 +230,8 @@ return [
             'Oracle Service Bus (OSB)' => ['ntt'],
             'BPEL' => ['ntt'],
             'Data governance' => ['ntt'],
-            'Canonical model' => ['ntt'],
-            'TAM Governance Pad' => ['ntt'],
+            'Canonical Model' => ['ntt'],
+            'TAM Governance Patterns' => ['ntt'],
             'Web services (SOAP, RESTful)' => ['glr'],
             'WSDL, XPath, XQuery' => ['ntt'],
             'Microservices' => ['atrio', 'agua', 'ntt'],
