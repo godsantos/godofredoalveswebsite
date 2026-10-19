@@ -101,7 +101,10 @@ $resume = 'Godofredo_Alves-Resume-fullstack.pdf';
     </section>
 
     <section class="section shell" id="work">
-      <div class="section-lead reveal"><p class="kicker">Projects</p><h2>Selected work</h2><p>Four projects I led. Pick one to see the details.</p></div>
+      <div class="work-intro">
+        <div class="section-lead reveal"><p class="kicker">Projects</p><h2>Selected work</h2><p>Four projects I led. Pick one to see the details.</p></div>
+        <figure class="project-visual reveal"><img src="assets/images/atrioiq-architecture.png" alt="AtrioIQ architecture showing financial data flowing through grounded multi-agent AI analysis into portfolio insights" width="1536" height="1024" loading="lazy" decoding="async"><span class="architecture-core" aria-hidden="true"></span><span class="data-signal signal-one" aria-hidden="true"></span><span class="data-signal signal-two" aria-hidden="true"></span><span class="data-signal signal-three" aria-hidden="true"></span></figure>
+      </div>
       <div class="work" data-work>
         <ol class="work-list" role="tablist" aria-label="Projects">
           <?php foreach ($projects as $i => $project): ?>
@@ -113,9 +116,8 @@ $resume = 'Godofredo_Alves-Resume-fullstack.pdf';
         </ol>
         <div class="work-panels">
           <?php foreach ($projects as $i => $project): ?>
-            <article class="work-panel<?= $i === 0 ? ' active has-visual' : '' ?>" role="tabpanel" id="panel-<?= $i ?>" aria-labelledby="tab-<?= $i ?>"<?= $i ? ' hidden' : '' ?>>
+            <article class="work-panel<?= $i === 0 ? ' active' : '' ?>" role="tabpanel" id="panel-<?= $i ?>" aria-labelledby="tab-<?= $i ?>"<?= $i ? ' hidden' : '' ?>>
               <p class="cat"><?= e($project['category']) ?></p>
-              <?php if ($i === 0): ?><figure class="project-visual"><img src="assets/images/atrioiq-architecture.png" alt="AtrioIQ architecture showing financial data flowing through grounded multi-agent AI analysis into portfolio insights" width="1536" height="1024" loading="lazy" decoding="async"><span class="architecture-core" aria-hidden="true"></span><span class="data-signal signal-one" aria-hidden="true"></span><span class="data-signal signal-two" aria-hidden="true"></span><span class="data-signal signal-three" aria-hidden="true"></span></figure><?php endif; ?>
               <h3><?= e($project['title']) ?></h3>
               <p><?= e($project['description']) ?></p>
               <ul class="metrics"><?php foreach ($project['metrics'] as $m): ?><li><?= e($m) ?></li><?php endforeach; ?></ul>
