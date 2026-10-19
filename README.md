@@ -23,4 +23,3 @@ Then open `http://localhost:8080`.
 - `assets/css/styles.css` — responsive visual design
 - `assets/js/main.js` — navigation and disclosure interactions
 - `assets/images/` — portrait and supporting image assets
-
