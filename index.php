@@ -18,7 +18,7 @@ function highlight($text) {
   }
   return e($text);
 }
-$assetVersion = '20261019-5';
+$assetVersion = '20261019-6';
 
 $projects = [
   [
@@ -169,10 +169,11 @@ $resume = 'Godofredo_Alves-Resume-fullstack.pdf';
     <section class="section shell" id="expertise">
       <div class="section-lead reveal"><p class="kicker">Expertise</p><h2>What I work on</h2></div>
       <div class="expertise-grid">
-        <article class="reveal"><span>01</span><h3>Architecture</h3><p>Distributed systems, cloud platforms, APIs and event-driven services.</p></article>
-        <article class="reveal"><span>02</span><h3>AI engineering</h3><p>LLM orchestration, RAG, evaluation, guardrails and production AI workflows.</p></article>
-        <article class="reveal"><span>03</span><h3>Technical leadership</h3><p>Architecture decisions, delivery process, mentoring and engineering standards.</p></article>
-        <article class="reveal"><span>04</span><h3>Due diligence</h3><p>Architecture health, code quality, technical debt and acquisition risk.</p></article>
+        <article class="reveal featured"><span>01</span><h3>Engineering management</h3><p>I build and run engineering organizations: shaping multi-squad teams, developing engineers into leaders, and owning strategy, delivery, and results from roadmap to production.</p><ul><li>Hiring &amp; onboarding</li><li>1:1s &amp; career growth</li><li>Performance reviews</li><li>Roadmap &amp; delivery</li><li>Budget &amp; cloud cost</li><li>Executive reporting</li></ul></article>
+        <article class="reveal"><span>02</span><h3>Architecture</h3><p>Distributed systems, cloud platforms, APIs and event-driven services.</p></article>
+        <article class="reveal"><span>03</span><h3>AI engineering</h3><p>LLM orchestration, RAG, evaluation, guardrails and production AI workflows.</p></article>
+        <article class="reveal"><span>04</span><h3>Technical leadership</h3><p>Architecture decisions, delivery process, mentoring and engineering standards.</p></article>
+        <article class="reveal"><span>05</span><h3>Due diligence</h3><p>Architecture health, code quality, technical debt and acquisition risk.</p></article>
       </div>
     </section>
 
@@ -190,6 +191,26 @@ $resume = 'Godofredo_Alves-Resume-fullstack.pdf';
             <ul><?php foreach ($items as $skill => $used): ?><li tabindex="0" data-co="<?= e(implode(' ', $used)) ?>"><?= e($skill) ?></li><?php endforeach; ?></ul>
           </div>
         <?php endforeach; ?>
+
+        <div class="skill-cat skill-learning reveal">
+          <div class="learning-badge">
+            <span class="learning-ping"></span>
+            <span class="learning-status">Continuous Growth</span>
+          </div>
+          <h3>Always Learning</h3>
+          <p class="learning-desc">Currently exploring, experimenting, and levelling up on new tech & architectures.</p>
+          <div class="learning-radar">
+            <div class="radar-scan"></div>
+            <div class="radar-crosshair"></div>
+          </div>
+          <div class="learning-tags">
+            <span class="learning-chip">Agentic AI Workflows</span>
+            <span class="learning-chip">DeepSeek & Local LLMs</span>
+            <span class="learning-chip">Rust & WASM</span>
+            <span class="learning-chip">Distributed Systems</span>
+            <span class="learning-chip">MCP Architecture</span>
+          </div>
+        </div>
       </div>
     </section>
 
