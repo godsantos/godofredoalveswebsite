@@ -138,9 +138,9 @@ return [
             'period' => 'Sep 2007 – Mar 2008',
             'location' => '',
             'highlights' => [
-                'Worked on back-end web development with Python.'
+                'Built and maintained web applications with Java (JSP, Struts), PHP, and JavaScript (AJAX, Bootstrap) on MSSQL and MySQL.'
             ],
-            'tags' => ['Python', 'Back-End Web Development']
+            'tags' => ['Java', 'JSP', 'Struts', 'PHP', 'JavaScript', 'AJAX', 'Bootstrap', 'MSSQL', 'MySQL']
         ],
         [
             'company' => 'Metropolitan Logistics LP',
@@ -149,9 +149,9 @@ return [
             'period' => 'Oct 2006 – Jun 2007',
             'location' => '',
             'highlights' => [
-                'Started my career in technical support, working with Python and back-end web development.'
+                'Started my career in technical support, working on web applications with Java (JSP, Struts), PHP, and JavaScript (AJAX, Bootstrap) on MSSQL and MySQL.'
             ],
-            'tags' => ['Python', 'Back-End Web Development']
+            'tags' => ['Java', 'JSP', 'Struts', 'PHP', 'JavaScript', 'AJAX', 'Bootstrap', 'MSSQL', 'MySQL']
         ]
     ],
     // Companies that can be used as filters in the technical skills section
@@ -173,9 +173,9 @@ return [
             'AI agents (Claude Code, Codex)' => ['atrio'],
         ],
         'Back-end' => [
-            'Java 17 / Spring Boot' => ['atrio', 'agua', 'ntt'],
-            'PHP' => ['agua', 'glr'],
-            'Python (FastAPI)' => ['atrio', 'bd', 'ntt', 'tivit', 'metro'],
+            'Java 17 / Spring Boot' => ['atrio', 'agua', 'ntt', 'tivit', 'metro'],
+            'PHP' => ['agua', 'glr', 'tivit', 'metro'],
+            'Python (FastAPI)' => ['atrio', 'bd', 'ntt'],
             'Node.js' => ['atrio', 'agua', 'ntt'],
             '.NET' => ['ntt', 'glr'],
             'C#' => ['ntt'],
@@ -185,14 +185,14 @@ return [
             'Webpack, Protractor' => ['ntt'],
             'Karma' => ['ntt'],
             'Django' => ['ntt'],
-            'HTML5, CSS, Bootstrap' => ['agua'],
-            'AJAX' => ['ntt'],
+            'HTML5, CSS, Bootstrap' => ['agua', 'tivit', 'metro'],
+            'AJAX' => ['ntt', 'tivit', 'metro'],
             'XML' => ['ntt'],
-            'JavaScript, jQuery' => ['ntt'],
-            'JSP' => ['glr'],
+            'JavaScript, jQuery' => ['ntt', 'tivit', 'metro'],
+            'JSP' => ['glr', 'tivit', 'metro'],
         ],
         'Frameworks' => [
-            'Struts, JSF, Spring' => ['glr', 'ntt'],
+            'Struts, JSF, Spring' => ['glr', 'ntt', 'tivit', 'metro'],
             'WordPress' => ['ntt'],
             'Magento' => ['ntt'],
         ],
@@ -209,8 +209,8 @@ return [
             'VMware' => ['ntt'],
         ],
         'Databases' => [
-            'MSSQL' => ['ntt'],
-            'MySQL' => ['agua', 'glr'],
+            'MSSQL' => ['ntt', 'tivit', 'metro'],
+            'MySQL' => ['agua', 'glr', 'tivit', 'metro'],
             'Oracle' => ['bd', 'glr'],
             'NoSQL' => ['ntt'],
             'Elasticsearch' => ['bd'],
