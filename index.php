@@ -131,13 +131,13 @@ $resume = 'Godofredo_Alves-Resume-fullstack.pdf';
 
     <section class="section career" id="career">
       <div class="shell career-layout">
-        <div class="section-lead sticky reveal"><p class="kicker">Career</p><h2>Since 2008</h2><p>From enterprise Java in São Paulo to leading AI platform teams in Toronto.</p><a class="text-link" href="<?= e($resume) ?>" target="_blank" rel="noopener">Full résumé ↗</a></div>
+        <div class="section-lead sticky reveal"><p class="kicker">Career</p><h2>Since 2006</h2><p>From enterprise Java in São Paulo to leading AI platform teams in Toronto.</p><a class="text-link" href="<?= e($resume) ?>" target="_blank" rel="noopener">Full résumé ↗</a></div>
         <ol class="timeline">
           <span class="timeline-fill" aria-hidden="true"></span>
           <?php foreach ($experience as $job): ?>
             <li class="role reveal">
               <span class="dot" aria-hidden="true"></span>
-              <p class="meta"><span><?= e($job['company']) ?></span><span><?= e($job['period']) ?> · <?= e($job['location']) ?></span></p>
+              <p class="meta"><span><?= e($job['company']) ?></span><span><?= e($job['period']) ?><?= $job['location'] ? ' · ' . e($job['location']) : '' ?></span></p>
               <h3><?= e($job['role']) ?></h3>
               <p><?= e($job['highlights'][0]) ?></p>
               <?php if (count($job['highlights']) > 1): ?>

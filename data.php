@@ -129,6 +129,28 @@ return [
                 'Engineered high-throughput batch processing and enterprise web services (SOAP/REST) with zero downtime.'
             ],
             'tags' => ['JavaEE', 'PHP', 'Oracle', 'MySQL', 'Struts/JSP', 'SOAP / REST', 'Enterprise Systems']
+        ],
+        [
+            'company' => 'TIVIT',
+            'company_description' => 'Brazilian IT services and outsourcing company.',
+            'role' => 'System Analyst',
+            'period' => 'Sep 2007 – Mar 2008',
+            'location' => '',
+            'highlights' => [
+                'Worked on back-end web development with Python.'
+            ],
+            'tags' => ['Python', 'Back-End Web Development']
+        ],
+        [
+            'company' => 'Metropolitan Logistics LP',
+            'company_description' => 'Logistics company.',
+            'role' => 'Technical Support Jr',
+            'period' => 'Oct 2006 – Jun 2007',
+            'location' => '',
+            'highlights' => [
+                'Started my career in technical support, working with Python and back-end web development.'
+            ],
+            'tags' => ['Python', 'Back-End Web Development']
         ]
     ],
     'skills_matrix' => [
