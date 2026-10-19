@@ -16,8 +16,8 @@ $selectedProjects = [
     'technologies' => ['RAG', 'Multi-Agent LLMs', 'FastAPI', 'React', 'AWS ECS'],
   ],
   [
-    'title' => 'M&A Technical Due Diligence',
-    'category' => 'Due Diligence',
+    'title' => 'Software Architecture & Design Audits',
+    'category' => 'Synopsys / Black Duck',
     'description' => 'At Synopsys / Black Duck, I assessed software architecture, code quality, development practices, and SDLC maturity for transaction due diligence. I interviewed engineering stakeholders, analyzed maintainability and ownership risks, and delivered recommendations for merger, acquisition, and sale decisions.',
     'metrics' => '4 years of architecture and code-quality due diligence',
     'technologies' => ['Architecture Review', 'Static Analysis', 'SDLC', 'Risk'],
