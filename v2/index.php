@@ -67,7 +67,7 @@ $selectedProjects = [
   <main id="main-content">
     <section class="hero shell" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow"><span></span> Toronto, Canada</p>
+        <p class="eyebrow"><span></span> Toronto, Ontario, Canada</p>
         <h1 id="hero-title">I make complex<br>technology <em>work.</em></h1>
         <p class="hero-intro">I’m Godofredo, an architect and hands-on engineering leader who turns ambitious AI, cloud, and enterprise ideas into dependable products.</p>
         <div class="hero-actions"><a class="button button-dark" href="#work">See selected work <span>↓</span></a><a class="text-link" href="../Godofredo_Alves-Resume-fullstack.pdf" target="_blank" rel="noopener">View résumé ↗</a></div>
@@ -128,7 +128,7 @@ $selectedProjects = [
       <div class="contact-actions"><a class="button button-light" href="mailto:<?= e($personal['email']) ?>">Email Godofredo <span>↗</span></a><a href="<?= e($personal['linkedin']) ?>" target="_blank" rel="noopener">LinkedIn ↗</a><a href="<?= e($personal['github']) ?>" target="_blank" rel="noopener">GitHub ↗</a></div>
     </section>
   </main>
-  <footer class="site-footer shell"><span>© <?= date('Y') ?> Godofredo Alves</span><span>Toronto, Canada · <?= e($personal['email']) ?></span></footer>
+  <footer class="site-footer shell"><span>© <?= date('Y') ?> Godofredo Alves</span><span>Toronto, Ontario, Canada · <?= e($personal['email']) ?></span></footer>
   <script src="main.js"></script>
 </body>
 </html>

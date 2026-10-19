@@ -19,7 +19,7 @@ return [
         'photo' => 'assets/images/godofredo_sitting_realistic.jpg',
         'photo_alt' => 'assets/images/godofredo_sitting_exec.jpg',
         'status' => 'Open to Architect Lead / Senior Software Engineer Opportunities',
-        'summary' => 'Hands-on Principal Full-Stack Architect and Technical Leader with over two decades of engineering excellence designing, building, and delivering mission-critical applications across FinTech, enterprise software, and cloud-native ecosystems. Currently directing 3 engineering squads (17 engineers) building an AI-powered portfolio intelligence SaaS. Deep background across Tier-1 financial institutions (Santander, Mapfre, Telefónica) and enterprise audit authority (Synopsys / Black Duck).',
+        'summary' => 'Hands-on Software Architect, Senior Full-Stack Engineer, and Technical Leader with over two decades of engineering excellence designing, building, and delivering mission-critical applications across FinTech, enterprise software, and cloud-native ecosystems. Currently directing 3 engineering squads (17 engineers) building an AI-powered portfolio intelligence SaaS. Deep background across Tier-1 financial institutions (Santander, Mapfre, Telefónica) and enterprise audit authority (Synopsys / Black Duck).',
     ],
     'metrics' => [
         ['value' => '20+', 'label' => 'Years of Engineering', 'sub' => 'From Enterprise Java/C# to AI-first Cloud Microservices'],
@@ -63,7 +63,7 @@ return [
         [
             'company' => 'AtrioIQ',
             'company_description' => 'AI-powered Portfolio Intelligence SaaS providing institutional-grade, explainable equity research and quantitative risk analysis.',
-            'role' => 'Principal Architect & Full-Stack Tech Lead',
+            'role' => 'Software Architect & Full-Stack Tech Lead',
             'period' => 'Oct 2025 – Present',
             'location' => 'Toronto, ON (Hybrid/Remote)',
             'highlights' => [
@@ -78,7 +78,7 @@ return [
         [
             'company' => 'Synopsys Inc. / Black Duck',
             'company_description' => 'Global leader in software integrity, security, and electronic design automation (acquired by Clearlake Capital & Francisco Partners).',
-            'role' => 'Software Architect / Senior Staff Engineer',
+            'role' => 'Sr. Software Architect · Sr. Staff Engineer · Tech Leader · Senior Full-Stack Software Engineer · Innovation',
             'period' => '2021 – Oct 2025',
             'location' => 'Toronto, ON',
             'highlights' => [
