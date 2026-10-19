@@ -10,7 +10,7 @@ $selectedProjects = [
   [
     'title' => 'AtrioIQ Portfolio Intelligence',
     'category' => 'AI + FinTech',
-    'description' => 'AtrioIQ is an AI-native portfolio intelligence platform that turns holdings, SEC filings, market data, and news into portfolio-specific financial research. I architected its multi-agent LLM pipeline—with RAG-grounded fact sheets, specialized risk, valuation, and event agents, adversarial review, confidence scoring, and flexible Claude, OpenAI, and Gemini orchestration—and lead the three squads building it.',
+    'description' => 'AtrioIQ is an AI-native portfolio intelligence platform that turns holdings, SEC filings, market data, and news into portfolio-specific financial research. I architected its multi-agent LLM pipeline with RAG-grounded fact sheets, specialized risk, valuation, and event agents, adversarial review, confidence scoring, and flexible Claude, OpenAI, and Gemini orchestration. I lead the three squads building it.',
     'metrics' => '17 engineers · 5 market data feeds · 4 specialized AI agents',
     'technologies' => ['RAG', 'Multi-Agent LLMs', 'FastAPI', 'React', 'AWS ECS'],
   ],

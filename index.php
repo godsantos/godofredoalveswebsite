@@ -9,7 +9,7 @@ $projects = [
   [
     'title' => 'AtrioIQ Portfolio Intelligence',
     'category' => 'AI + FinTech',
-    'description' => 'AtrioIQ is an AI-native portfolio intelligence platform that turns holdings, SEC filings, market data, and news into portfolio-specific financial research. I architected its multi-agent LLM pipeline—with RAG-grounded fact sheets, specialized risk, valuation, and event agents, adversarial review, confidence scoring, and flexible Claude, OpenAI, and Gemini orchestration—and lead the three squads building it.',
+    'description' => 'AtrioIQ is an AI-native portfolio intelligence platform that turns holdings, SEC filings, market data, and news into portfolio-specific financial research. I architected its multi-agent LLM pipeline with RAG-grounded fact sheets, specialized risk, valuation, and event agents, adversarial review, confidence scoring, and flexible Claude, OpenAI, and Gemini orchestration. I lead the three squads building it.',
     'metrics' => ['17 engineers', '5 market data feeds', '4 specialized AI agents'],
     'technologies' => ['RAG', 'Multi-Agent LLMs', 'FastAPI', 'React', 'AWS ECS'],
   ],
@@ -113,8 +113,9 @@ $resume = 'Godofredo_Alves-Resume-fullstack.pdf';
         </ol>
         <div class="work-panels">
           <?php foreach ($projects as $i => $project): ?>
-            <article class="work-panel<?= $i === 0 ? ' active' : '' ?>" role="tabpanel" id="panel-<?= $i ?>" aria-labelledby="tab-<?= $i ?>"<?= $i ? ' hidden' : '' ?>>
+            <article class="work-panel<?= $i === 0 ? ' active has-visual' : '' ?>" role="tabpanel" id="panel-<?= $i ?>" aria-labelledby="tab-<?= $i ?>"<?= $i ? ' hidden' : '' ?>>
               <p class="cat"><?= e($project['category']) ?></p>
+              <?php if ($i === 0): ?><figure class="project-visual"><img src="assets/images/atrioiq-architecture.png" alt="AtrioIQ architecture showing financial data flowing through grounded multi-agent AI analysis into portfolio insights" width="1536" height="1024" loading="lazy" decoding="async"></figure><?php endif; ?>
               <h3><?= e($project['title']) ?></h3>
               <p><?= e($project['description']) ?></p>
               <ul class="metrics"><?php foreach ($project['metrics'] as $m): ?><li><?= e($m) ?></li><?php endforeach; ?></ul>
