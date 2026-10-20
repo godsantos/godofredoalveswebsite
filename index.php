@@ -20,6 +20,16 @@ function highlight($text) {
 }
 $assetVersion = '20261020-2';
 
+// A different portrait on each visit
+$portraits = [
+  'godofredo-cutout.webp',
+  'godofredo-portrait-smart-casual.png',
+  'godofredo-portrait-2026.png',
+  'godofredo-portrait-tshirt.png',
+  'godofredo-portrait-studio.jpg',
+];
+$portrait = $portraits[array_rand($portraits)];
+
 $projects = [
   [
     'title' => 'AtrioIQ Portfolio Intelligence',
@@ -105,7 +115,7 @@ $resume = 'Godofredo_Alves-Resume.pdf';
       </div>
       <div class="hero-portrait reveal">
         <div class="portrait-card" aria-hidden="true"><span class="portrait-glow"></span></div>
-        <img class="portrait-cutout" src="assets/images/godofredo-portrait-smart-casual.png?v=<?= e($assetVersion) ?>" alt="Godofredo Alves" width="1122" height="1402" fetchpriority="high">
+        <img class="portrait-cutout" src="assets/images/<?= e($portrait) ?>?v=<?= e($assetVersion) ?>" alt="Godofredo Alves" width="1122" height="1402" fetchpriority="high">
         <div class="portrait-note"><strong><span data-count="20">20</span>+</strong><span>years shipping software</span></div>
       </div>
     </section>
