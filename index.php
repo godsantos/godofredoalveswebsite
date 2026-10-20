@@ -24,9 +24,8 @@ $assetVersion = '20261020-2';
 $portraits = [
   'godofredo-cutout.webp',
   'godofredo-portrait-smart-casual.png',
-  'godofredo-portrait-2026.png',
-  'godofredo-portrait-tshirt.png',
-  'godofredo-portrait-studio.jpg',
+  'godofredo-portrait-plaid-suit.jpg',
+  'godofredo-portrait-tan-blazer.jpg',
 ];
 $portrait = $portraits[array_rand($portraits)];
 
