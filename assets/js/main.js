@@ -112,22 +112,6 @@ document.addEventListener('DOMContentLoaded', () => {
       if (focus) tabs[index].focus();
       schedule();
     };
-    // Lock the box to the tallest panel so auto-advance never shifts the page below it
-    const lockHeight = () => {
-      panelBox.style.minHeight = '';
-      if (stacked.matches) return;
-      let tallest = 0;
-      panels.forEach((p) => {
-        const was = p.hidden;
-        p.hidden = false;
-        tallest = Math.max(tallest, p.offsetHeight);
-        p.hidden = was;
-      });
-      panelBox.style.minHeight = `${Math.max(tallest, panelBox.offsetHeight)}px`;
-    };
-    lockHeight();
-    window.addEventListener('resize', lockHeight);
-    window.addEventListener('load', lockHeight);
     const schedule = () => {
       clearTimeout(timer);
       if (auto) timer = setTimeout(() => select(index + 1), 7000);

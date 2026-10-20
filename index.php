@@ -18,7 +18,7 @@ function highlight($text) {
   }
   return e($text);
 }
-$assetVersion = '20261020-2';
+$assetVersion = '20261020-3';
 
 // A different portrait on each visit
 $portraits = [
