@@ -96,7 +96,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const panels = [...work.querySelectorAll('[role=tabpanel]')];
     const panelBox = work.querySelector('.work-panels');
     let index = 0;
-    let auto = !reduced;
+    // Stacked layout on small screens: no auto-advance, so the page never shifts while reading
+    const stacked = window.matchMedia('(max-width: 900px)');
+    let auto = !reduced && !stacked.matches;
     let timer;
     const select = (i, focus) => {
       index = (i + tabs.length) % tabs.length;
@@ -113,6 +115,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Lock the box to the tallest panel so auto-advance never shifts the page below it
     const lockHeight = () => {
       panelBox.style.minHeight = '';
+      if (stacked.matches) return;
       let tallest = 0;
       panels.forEach((p) => {
         const was = p.hidden;
