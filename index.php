@@ -23,9 +23,9 @@ $assetVersion = '20261020-3';
 // A different portrait on each visit
 $portraits = [
   'godofredo-cutout.webp',
-  'godofredo-portrait-smart-casual.png',
-  'godofredo-portrait-plaid-suit.jpg',
-  'godofredo-portrait-tan-blazer.jpg',
+  'godofredo-cutout-smart-casual.webp',
+  'godofredo-cutout-plaid-suit.webp',
+  'godofredo-cutout-tan-blazer.webp',
 ];
 $portrait = $portraits[array_rand($portraits)];
 
