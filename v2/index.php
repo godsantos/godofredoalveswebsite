@@ -5,7 +5,7 @@ $experience = $data['experience'];
 $projects = $data['featured_projects'];
 $skills = $data['skills_matrix'];
 function e($value) { return htmlspecialchars($value, ENT_QUOTES, 'UTF-8'); }
-$assetVersion = '20261019-2';
+$assetVersion = '20261023-1';
 $selectedExperience = array_slice($experience, 0, 3);
 $selectedProjects = [
   [
@@ -51,7 +51,10 @@ $selectedProjects = [
   <meta name="twitter:title" content="<?= e($personal['name']) ?> | Software Architect & Engineering Leader">
   <meta name="twitter:description" content="20+ years turning complex systems into clear, reliable products.">
   <meta name="twitter:image" content="<?= e($personal['site_url']) ?>/assets/images/godofredo-portrait-2026.png">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%230b7468%22/><text x=%2250%22 y=%2265%22 text-anchor=%22middle%22 font-family=%22Arial%22 font-weight=%22700%22 font-size=%2248%22 fill=%22white%22>GA</text></svg>">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png?v=<?= e($assetVersion) ?>">
+  <link rel="icon" type="image/png" sizes="512x512" href="/assets/icons/favicon.png?v=<?= e($assetVersion) ?>">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=<?= e($assetVersion) ?>">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png?v=<?= e($assetVersion) ?>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -60,7 +63,7 @@ $selectedProjects = [
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="site-header">
-    <a class="wordmark" href="#main-content" aria-label="Back to top">GA<span>.</span></a>
+    <a class="wordmark" href="#main-content" aria-label="Back to top"><img src="/assets/brand/ga-monogram-header.png?v=<?= e($assetVersion) ?>" alt="" width="256" height="142"></a>
     <nav aria-label="Primary navigation"><a href="#work">Work</a><a href="#experience">Experience</a><a href="#expertise">Expertise</a></nav>
     <a class="header-cta" href="mailto:<?= e($personal['email']) ?>">Let’s talk <span>↗</span></a>
   </header>

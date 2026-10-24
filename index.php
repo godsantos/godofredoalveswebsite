@@ -18,7 +18,7 @@ function highlight($text) {
   }
   return e($text);
 }
-$assetVersion = '20261020-3';
+$assetVersion = '20261023-1';
 
 // A different portrait on each visit
 $portraits = [
@@ -87,6 +87,10 @@ $resume = 'Godofredo_Alves-Resume.pdf';
   <title><?= e($personal['name']) ?> | Software Architect & Engineering Leader</title>
   <meta name="description" content="Godofredo Alves is a Toronto-based software architect and engineering leader building resilient cloud, AI and enterprise platforms.">
   <link rel="canonical" href="<?= e($personal['site_url']) ?>/">
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32.png?v=<?= e($assetVersion) ?>">
+  <link rel="icon" type="image/png" sizes="512x512" href="/assets/icons/favicon.png?v=<?= e($assetVersion) ?>">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=<?= e($assetVersion) ?>">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png?v=<?= e($assetVersion) ?>">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -95,7 +99,7 @@ $resume = 'Godofredo_Alves-Resume.pdf';
 <body>
   <div class="progress" aria-hidden="true"></div>
   <header class="site-header">
-    <a class="wordmark" href="#top" aria-label="Back to top">GA<span>.</span></a>
+    <a class="wordmark" href="#top" aria-label="Back to top"><img src="/assets/brand/ga-monogram-header.png?v=<?= e($assetVersion) ?>" alt="" width="256" height="142"></a>
     <nav aria-label="Primary navigation"><a href="#work">Work</a><a href="#career">Career</a><a href="#expertise">Expertise</a><a href="#skills">Skills</a></nav>
     <a class="header-cta" href="#contact">Let’s talk</a>
   </header>
