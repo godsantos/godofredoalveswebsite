@@ -5,7 +5,7 @@ $experience = $data['experience'];
 $projects = $data['featured_projects'];
 $skills = $data['skills_matrix'];
 function e($value) { return htmlspecialchars($value, ENT_QUOTES, 'UTF-8'); }
-$assetVersion = '20261023-1';
+$assetVersion = '20261023-2';
 $selectedExperience = array_slice($experience, 0, 3);
 $selectedProjects = [
   [
@@ -63,7 +63,7 @@ $selectedProjects = [
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
   <header class="site-header">
-    <a class="wordmark" href="#main-content" aria-label="Back to top"><img src="/assets/brand/ga-monogram-header.png?v=<?= e($assetVersion) ?>" alt="" width="256" height="142"></a>
+    <a class="wordmark" href="#main-content" aria-label="Back to top"><img src="/assets/brand/ga-monogram-header-clean.png?v=<?= e($assetVersion) ?>" alt="" width="256" height="142"></a>
     <nav aria-label="Primary navigation"><a href="#work">Work</a><a href="#experience">Experience</a><a href="#expertise">Expertise</a></nav>
     <a class="header-cta" href="mailto:<?= e($personal['email']) ?>">Let’s talk <span>↗</span></a>
   </header>

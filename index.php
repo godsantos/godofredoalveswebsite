@@ -18,7 +18,7 @@ function highlight($text) {
   }
   return e($text);
 }
-$assetVersion = '20261023-1';
+$assetVersion = '20261023-2';
 
 // A different portrait on each visit
 $portraits = [
@@ -99,7 +99,7 @@ $resume = 'Godofredo_Alves-Resume.pdf';
 <body>
   <div class="progress" aria-hidden="true"></div>
   <header class="site-header">
-    <a class="wordmark" href="#top" aria-label="Back to top"><img src="/assets/brand/ga-monogram-header.png?v=<?= e($assetVersion) ?>" alt="" width="256" height="142"></a>
+    <a class="wordmark" href="#top" aria-label="Back to top"><img src="/assets/brand/ga-monogram-header-clean.png?v=<?= e($assetVersion) ?>" alt="" width="256" height="142"></a>
     <nav aria-label="Primary navigation"><a href="#work">Work</a><a href="#career">Career</a><a href="#expertise">Expertise</a><a href="#skills">Skills</a></nav>
     <a class="header-cta" href="#contact">Let’s talk</a>
   </header>
